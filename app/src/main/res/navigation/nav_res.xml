@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_res"
+    app:startDestination="@id/loginAdd">
+
+    <fragment
+        android:id="@+id/loginAdd"
+        android:name="com.example.retrofitlogin.LoginAdd"
+        android:label="fragment_login_add"
+        tools:layout="@layout/fragment_login_add" >
+        <action
+            android:id="@+id/action_loginAdd_to_loginAdding"
+            app:destination="@id/loginAdding" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAdding"
+        android:name="com.example.retrofitlogin.loginAdding"
+        android:label="fragment_login_adding"
+        tools:layout="@layout/fragment_login_adding" />
+</navigation>
